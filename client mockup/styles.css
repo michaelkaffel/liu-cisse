@@ -1,27 +1,26 @@
 /* ============================================================
-   LIU-CISSÉ HOLDINGS — STYLESHEET
+   LIU-CISSÉ HOLDINGS — STYLESHEET 1
    ============================================================ */
 
 /* ------------------------------------------------------------
    1. CUSTOM PROPERTIES
    ------------------------------------------------------------ */
 :root {
-    /* Palette — warm parchment editorial */
-    --black: #071f18;
-    --charcoal: #12372c;
-    --navy: #162f4b;
-    --burgundy: #4a1e1e;
-    --burgundy-mid: #6c2c2b;
-    --forest: #071f18;
-    --forest-mid: #1d4b3a;
-    --ivory: #fbf5ea;
-    --ivory-dim: #e7dcc6;
-    --gold: #b88a35;
-    --gold-dim: #a07828;
-    --gold-pale: #ead9a6;
-    --copper: #a15b35;
-    --white: #fbf5ea;
-    --teal:#2e6f66;
+    /* Palette */
+    --black: #0a0a0a;
+    --charcoal: #141414;
+    --navy: #12151f;
+    --burgundy: #3d0c1f;
+    --burgundy-mid: #5a1530;
+    --forest: #122F32;
+    --forest-mid: #1e3d2a;
+    --ivory: #f5f0e8;
+    --ivory-dim: #ddd8ce;
+    --gold: #c9a84c;
+    --gold-dim: #a8893a;
+    --gold-pale: #e8d5a3;
+    --copper: #b5703a;
+    --white: #ffffff;
 
     /* Typography */
     --serif: 'Cormorant Garamond', 'Georgia', serif;
@@ -66,24 +65,10 @@ html {
 body {
     font-family: var(--sans);
     font-weight: 300;
-    color: var(--forest);
-    background: #f3eadc;
+    color: var(--ivory);
+    background: var(--charcoal);
     line-height: 1.75;
     overflow-x: hidden;
-}
-
-/* Subtle parchment ambient glow */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background:
-        radial-gradient(ellipse at 8% 0%, rgba(184, 138, 53, .18), transparent 42%),
-        radial-gradient(ellipse at 88% 10%, rgba(46, 111, 102, .12), transparent 36%),
-        radial-gradient(ellipse at 8% 92%, rgba(108, 44, 43, .10), transparent 42%),
-        linear-gradient(180deg, rgba(255, 255, 255, .16), transparent 32%);
 }
 
 img {
@@ -127,7 +112,7 @@ ul {
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.01em;
-    color: var(--forest);
+    color: var(--ivory);
 }
 
 .t-display-sm {
@@ -135,7 +120,7 @@ ul {
     font-size: clamp(1.8rem, 3.5vw, 2.8rem);
     font-weight: 500;
     line-height: 1.2;
-    color: var(--forest);
+    color: var(--ivory);
 }
 
 .t-heading {
@@ -143,7 +128,7 @@ ul {
     font-size: clamp(1.4rem, 2.5vw, 1.9rem);
     font-weight: 500;
     line-height: 1.3;
-    color: var(--forest);
+    color: var(--ivory);
 }
 
 .t-body {
@@ -151,7 +136,7 @@ ul {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.8;
-    color: #6d6254;
+    color: var(--ivory-dim);
 }
 
 .t-quote {
@@ -160,7 +145,7 @@ ul {
     font-weight: 400;
     font-style: italic;
     line-height: 1.45;
-    color: var(--forest);
+    color: var(--ivory);
 }
 
 /* ------------------------------------------------------------
@@ -182,7 +167,7 @@ ul {
 }
 
 .section--charcoal {
-    background: #f3eadc;
+    background: var(--charcoal);
 }
 
 .section--navy {
@@ -199,7 +184,7 @@ ul {
 
 .section--ivory {
     background: var(--ivory);
-    color: var(--forest);
+    color: var(--charcoal);
 }
 
 .divider-gold {
@@ -226,14 +211,14 @@ ul {
     display: flex;
     align-items: center;
     transition: background 0.4s ease, border-bottom 0.4s ease;
-    background: rgba(243, 234, 220, .92);
-    border-bottom: 1px solid rgba(184, 138, 53, .25);
+    background: var(--ivory);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.25);
 }
 
 .nav.scrolled {
-    background: rgba(243, 234, 220, .97);
-    border-bottom: 1px solid rgba(184, 138, 53, .34);
-    backdrop-filter: blur(12px);
+    background: rgba(245, 240, 232, 0.97);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+    backdrop-filter: blur(8px);
 }
 
 .nav__inner {
@@ -258,7 +243,7 @@ ul {
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 0.12em;
-    color: var(--forest);
+    color: var(--charcoal);
     text-transform: uppercase;
 }
 
@@ -285,12 +270,12 @@ ul {
     font-weight: 400;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--charcoal);
+    color: rgba(20, 20, 20, 0.65);
     transition: color 0.2s;
 }
 
 .nav__links a:hover {
-    color: var(--gold);
+    color: var(--gold-dim);
 }
 
 .nav__cta {
@@ -299,16 +284,15 @@ ul {
     font-weight: 500;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--ivory) !important;
-    background: var(--forest);
+    color: var(--charcoal) !important;
+    background: var(--gold);
     padding: 0.6rem 1.4rem;
     transition: background 0.2s !important;
-    border: 1px solid var(--gold);
 }
 
 .nav__cta:hover {
-    background: var(--gold) !important;
-    color: var(--forest) !important;
+    background: var(--gold-pale) !important;
+    color: var(--charcoal) !important;
 }
 
 /* Hamburger */
@@ -326,7 +310,7 @@ ul {
     display: block;
     width: 24px;
     height: 1.5px;
-    background: var(--forest);
+    background: var(--charcoal);
     transition: transform 0.3s, opacity 0.3s;
 }
 
@@ -349,8 +333,8 @@ ul {
     top: var(--nav-h);
     left: 0;
     right: 0;
-    background: rgba(243, 234, 220, .99);
-    border-bottom: 1px solid rgba(184, 138, 53, .25);
+    background: rgba(245, 240, 232, 0.99);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
     padding: 2rem;
     flex-direction: column;
     gap: 1.5rem;
@@ -367,12 +351,12 @@ ul {
     font-weight: 400;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--charcoal);
+    color: rgba(20, 20, 20, 0.65);
     transition: color 0.2s;
 }
 
 .nav__drawer a:hover {
-    color: var(--gold);
+    color: var(--gold-dim);
 }
 
 .nav__drawer .nav__cta {
@@ -386,7 +370,7 @@ ul {
     min-height: 60vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, var(--ivory), #efe4d3);
+    background: var(--ivory);
     padding-top: var(--nav-h);
     position: relative;
     overflow: hidden;
@@ -410,19 +394,14 @@ ul {
     width: 100%;
 }
 
-.headline_font_typograph {
-    font-style: italic;
-    color: var(--teal)
-}
-
 .hero .t-display {
-    color: var(--forest);
+    color: var(--charcoal)
 }
 
 .hero__eyebrow {
     margin-top: -3rem;
     margin-bottom: 1.5rem;
-    color: var(--copper);
+    color: #b5703a;
 }
 
 .hero__headline {
@@ -432,13 +411,30 @@ ul {
 
 .hero__subhead {
     max-width: 560px;
-    margin-bottom: 1rem;
+    margin-bottom: -3rem;
     font-size: 1.05rem;
     color: var(--charcoal);
     font-weight: 300;
     line-height: 1.75;
     opacity: 0.75;
 }
+
+/* .hero__cta {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--charcoal);
+    background: var(--gold);
+    padding: 1rem 2.5rem;
+    transition: background 0.25s;
+} */
+
+/* .hero__cta:hover {
+    background: var(--gold-pale);
+} */
 
 .hero__scroll-hint {
     display: inline-flex;
@@ -452,7 +448,7 @@ ul {
     font-size: 0.6rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--forest);
+    color: var(--ivory);
 }
 
 .hero__scroll-line {
@@ -481,7 +477,7 @@ ul {
    7. VALUES BAR
    ------------------------------------------------------------ */
 .values {
-    background: var(--forest);
+    background: #0b1f1c;
     padding: var(--space-lg) 0;
 }
 
@@ -490,15 +486,12 @@ ul {
     margin-bottom: .5rem;
     letter-spacing: 0.3rem;
     opacity: 0.9;
-    color: var(--gold);
 }
 
 .values__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto 1fr;
     gap: 0;
-    align-items: stretch;
 }
 
 .values__square-title {
@@ -513,10 +506,9 @@ ul {
     padding: 3rem 2.5rem;
     text-align: center;
     position: relative;
-    display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 4;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 0;
 }
 
@@ -527,23 +519,24 @@ ul {
     top: 10%;
     height: 80%;
     width: 1px;
-    background: rgba(184,138,53,.35);
+    background: rgba(201, 168, 76, 0.35);
 }
 
+/* Serif title ABOVE icon — matches reference layout */
 .values__item .services__card-title {
     font-family: var(--serif);
     font-size: clamp(1.15rem, 1.8vw, 1.45rem);
     font-weight: 500;
     color: var(--ivory);
+    margin-bottom: 1.75rem;
     letter-spacing: 0.02em;
     line-height: 1.3;
-    display: flex;
+    display: block;
+    order: -1;
+    min-height: 3.8rem;
     align-items: flex-end;
     justify-content: center;
-    text-align: center;
     width: 100%;
-    padding-bottom: 1.75rem;
-    align-self: end;
 }
 
 .values__icon {
@@ -552,7 +545,6 @@ ul {
     margin: 0 auto 1.25rem;
     color: var(--gold);
     stroke-width: 1.25;
-    align-self: start;
 }
 
 .values__label {
@@ -570,18 +562,17 @@ ul {
     font-family: var(--sans);
     font-size: 0.92rem;
     font-weight: 300;
-    color: rgba(251,245,234,.65);
+    color: rgba(245, 240, 232, 0.65);
     line-height: 1.8;
     max-width: 220px;
     margin: 0 auto;
-    align-self: end;
 }
 
 /* ------------------------------------------------------------
    8. THE WORK (SYSTEMS THESIS)
    ------------------------------------------------------------ */
 .work {
-    background: #f3eadc;
+    background: var(--charcoal);
 }
 
 .work__inner {
@@ -604,7 +595,7 @@ ul {
     font-family: var(--serif);
     font-size: clamp(1.1rem, 2vw, 1.35rem);
     font-style: italic;
-    color: var(--forest);
+    color: var(--gold-pale);
     margin-top: 2rem;
     line-height: 1.6;
     border-left: 2px solid var(--gold);
@@ -637,14 +628,14 @@ ul {
 }
 
 .services__card:hover {
-    background: rgba(108, 44, 43, .9);
+    background: rgba(90, 21, 48, 0.9);
 }
 
 .services__card-num {
     font-family: var(--serif);
     font-size: 3.5rem;
     font-weight: 400;
-    color: rgba(184, 138, 53, .15);
+    color: rgba(201, 168, 76, 0.15);
     line-height: 1;
     margin-bottom: 1.5rem;
     display: block;
@@ -677,9 +668,6 @@ ul {
     padding-right: 0;
 }
 
-.map-header {
-    color: var(--gold)
-}
 
 .map-section__subtitle {
     font-size: 0.9rem;
@@ -710,7 +698,7 @@ ul {
 }
 
 .founder .t-eyebrow {
-    color: var(--gold-dim);
+    color: var(--gold-dim)
 }
 
 .founder .divider-gold {
@@ -721,7 +709,7 @@ ul {
     font-family: var(--serif);
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 500;
-    color: var(--forest);
+    color: var(--charcoal);
     margin-bottom: 0.5rem;
 }
 
@@ -729,7 +717,7 @@ ul {
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.12em;
-    color: var(--copper);
+    color: #b5703a;
     text-transform: uppercase;
     line-height: 1.8;
     margin-bottom: 2rem;
@@ -742,15 +730,15 @@ ul {
 .founder__bio .t-body {
     font-size: 0.8rem;
     line-height: 1.75;
-    color: rgba(7, 31, 24, .8);
+    color: rgba(20, 20, 20, 0.8);
 }
 
 .founder__credentials {
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(184, 138, 53, .35);
+    border-top: 1px solid rgba(201, 168, 76, 0.35);
     font-size: 0.85rem;
-    color: var(--forest);
+    color: rgba(20, 20, 20, 1);
     line-height: 2;
 }
 
@@ -769,8 +757,8 @@ ul {
     font-weight: 400;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--copper);
-    border-bottom: 1px solid rgba(184, 138, 53, .35);
+    color: #b5703a;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.35);
     padding-bottom: 2px;
     transition: border-color 0.2s, color 0.2s;
 }
@@ -789,7 +777,7 @@ ul {
    12. QUOTE BLOCK
    ------------------------------------------------------------ */
 .quote-block {
-    background: var(--forest);
+    background: #0b1f1c;
     padding: 3rem 0;
 }
 
@@ -852,6 +840,7 @@ ul {
 }
 
 .quote-block__mark__end {
+    margin-left: rem;
     font-family: var(--serif);
     font-size: 1.4rem;
     font-style: italic;
@@ -880,13 +869,13 @@ ul {
 
 .affiliations__item {
     padding: 2rem 1.5rem;
-    border: 1px solid rgba(184, 138, 53, .15);
+    border: 1px solid rgba(201, 168, 76, 0.15);
     text-align: left;
     transition: border-color 0.3s;
 }
 
 .affiliations__item:hover {
-    border-color: rgba(184, 138, 53, .4);
+    border-color: rgba(201, 168, 76, 0.4);
 }
 
 .affiliations__org {
@@ -953,13 +942,14 @@ ul {
 
 .newsletter__divider {
     width: 1px;
-    background: rgba(184, 138, 53, .2);
+    background: rgba(201, 168, 76, 0.2);
     align-self: stretch;
 }
 
 .newsletter__form {
     display: flex;
     margin-top: auto;
+    /* gap: 0; */
 }
 
 .newsletter__input {
@@ -968,8 +958,8 @@ ul {
     font-size: 0.85rem;
     font-weight: 300;
     color: var(--ivory);
-    background: rgba(255, 255, 255, .06);
-    border: 1px solid rgba(184, 138, 53, .25);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(201, 168, 76, 0.25);
     border-right: none;
     padding: 0.85rem 1rem;
     outline: none;
@@ -977,7 +967,7 @@ ul {
 }
 
 .newsletter__input::placeholder {
-    color: rgba(251, 245, 234, .35);
+    color: rgba(245, 240, 232, 0.35);
 }
 
 .newsletter__input:focus {
@@ -990,7 +980,7 @@ ul {
     font-weight: 500;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--forest);
+    color: var(--charcoal);
     background: var(--gold);
     border: none;
     padding: 0.85rem 1.5rem;
@@ -1004,98 +994,10 @@ ul {
 }
 
 /* ------------------------------------------------------------
-   14b. PRIMER
-   ------------------------------------------------------------ */
-.primer {
-    background: #e7dcc6;
-}
-
-.primer-card {
-    display: grid;
-    grid-template-columns: .86fr 1.14fr;
-    gap: 54px;
-    align-items: center;
-    border: 1px solid rgba(184,138,53,.34);
-    background: rgba(251,245,234,.55);
-    padding: 48px;
-    box-shadow: 0 30px 90px rgba(7,31,24,.08);
-}
-
-.doc-cover {
-    height: 440px;
-    background: linear-gradient(145deg, #071f18, #162f4b 56%, #6c2c2b);
-    color: #fbf5ea;
-    padding: 38px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    box-shadow: 0 32px 80px rgba(7,31,24,.18);
-}
-
-.doc-cover::before {
-    content: "";
-    position: absolute;
-    inset: 16px;
-    border: 1px solid rgba(213,181,101,.46);
-    pointer-events: none;
-}
-
-.doc-cover > * {
-    position: relative;
-    z-index: 1;
-}
-
-.doc-small {
-    font-family: var(--sans);
-    font-size: 0.65rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--gold-pale);
-    font-weight: 600;
-    margin-bottom: 24px;
-}
-
-.doc-title {
-    font-family: var(--serif);
-    font-size: clamp(2.2rem, 4vw, 3.2rem);
-    line-height: 1;
-    font-weight: 300;
-    letter-spacing: -0.02em;
-    color: #fbf5ea;
-}
-
-.doc-bottom {
-    font-size: 0.9rem;
-    color: rgba(251,245,234,.76);
-    line-height: 1.6;
-}
-
-.primer-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 0;
-}
-
-@media (max-width: 900px) {
-    .primer-card {
-        grid-template-columns: 1fr;
-        padding: 30px;
-    }
-    .doc-cover {
-        height: 360px;
-        order: 2;
-    }
-    .primer-text {
-        order: 1;
-    }
-}
-/* ------------------------------------------------------------
    15. CTA SECTION
    ------------------------------------------------------------ */
 .cta-section {
-    background: var(--ivory);
+    background: var(--charcoal);
     text-align: center;
     padding: var(--space-xl) 0;
 }
@@ -1108,14 +1010,13 @@ ul {
 
 .cta-section__headline {
     margin-bottom: 1.25rem;
-    color: var(--forest);
 }
 
 .cta-section__sub {
     font-family: var(--serif);
     font-size: 1.1rem;
     font-style: italic;
-    color: #6d6254;
+    color: var(--ivory-dim);
     margin-bottom: 2.5rem;
 }
 
@@ -1126,53 +1027,23 @@ ul {
     font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--forest);
-    background: var(--ivory);
+    color: var(--charcoal);
+    background: var(--gold);
     padding: 1.1rem 3rem;
-    border: 1px solid var(--forest);
     transition: background 0.25s;
 }
 
 .cta-btn:hover {
-    background: var(--forest);
-    color: var(--ivory);
-}
-
-.cta-btn-2nd {
-    display: inline-block;
-    font-family: var(--sans);
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--ivory);
-    background: var(--forest);
-    padding: 1.1rem 3rem;
-    border: 1px solid var(--forest);
-    transition: background 0.25s;
-
-}
-
-.cta-btn-2nd:hover {
-    background: var(--teal);
-    color: var(--ivory);
-}
-
-.hero__actions {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 14px;
-    margin-top: 2rem;
+    background: var(--gold-pale);
 }
 
 /* ------------------------------------------------------------
    16. FOOTER
    ------------------------------------------------------------ */
 .footer {
-    background: var(--forest);
+    background: var(--ivory);
     padding: 3rem 0;
-    border-top: 1px solid rgba(184, 138, 53, .3);
+    border-top: 1px solid rgba(201, 168, 76, 0.3);
 }
 
 .footer__inner {
@@ -1202,18 +1073,18 @@ ul {
     font-size: 0.9rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--gold-pale);
+    color: var(--charcoal);
 }
 
 .footer__copy {
     font-size: 0.75rem;
-    color: rgba(251, 245, 234, .52);
+    color: var(--charcoal);
     letter-spacing: 0.05em;
 }
 
 .footer__email {
     font-size: 0.75rem;
-    color: rgba(251, 245, 234, .74);
+    color: var(--charcoal);
     letter-spacing: 0.06em;
     transition: color 0.2s;
 }
@@ -1223,17 +1094,17 @@ ul {
     gap: 0.75rem;
     align-items: center;
     font-size: 0.75rem;
-    color: rgba(251, 245, 234, .52);
+    color: var(--charcoal);
 }
 
 .footer__legal a,
-.footer__legal span {
-    color: rgba(251, 245, 234, .52);
+footer__legal span {
+    color: var(--charcoal);
     transition: color 0.2s;
 }
 
 .footer__legal a:hover {
-    color: var(--gold);
+    color: var(--gold-dim);
 }
 
 .footer__email:hover {
@@ -1243,11 +1114,12 @@ ul {
 /* ------------------------------------------------------------
    17. MODAL
    ------------------------------------------------------------ */
+
 .modal {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(7, 31, 24, .75);
+    background: rgba(0, 0, 0, 0.75);
     z-index: 2000;
     align-items: center;
     justify-content: center;
@@ -1259,8 +1131,8 @@ ul {
 }
 
 .modal__box {
-    background: var(--ivory);
-    border: 1px solid rgba(184, 138, 53, .2);
+    background: var(--charcoal);
+    border: 1px solid rgba(201, 168, 76, 0.2);
     max-width: 600px;
     width: 100%;
     padding: 3rem;
@@ -1275,7 +1147,7 @@ ul {
     right: 1.25rem;
     background: none;
     border: none;
-    color: #6d6254;
+    color: var(--ivory-dim);
     font-size: 1.5rem;
     cursor: pointer;
     line-height: 1;
@@ -1289,13 +1161,13 @@ ul {
     font-family: var(--serif);
     font-size: 1.6rem;
     font-weight: 500;
-    color: var(--forest);
+    color: var(--ivory);
     margin-bottom: 1.5rem;
 }
 
 .modal__body p {
     font-size: 0.9rem;
-    color: #6d6254;
+    color: var(--ivory-dim);
     line-height: 1.75;
     margin-bottom: 1rem;
 }
@@ -1305,7 +1177,7 @@ ul {
 }
 
 /* ------------------------------------------------------------
-   18. RESPONSIVE
+   17. RESPONSIVE
    ------------------------------------------------------------ */
 @media (max-width: 900px) {
     .nav__links {
@@ -1347,6 +1219,7 @@ ul {
         margin-left: auto;
     }
 
+
     .quote-block__content {
         text-align: right;
     }
@@ -1379,19 +1252,13 @@ ul {
         top: 20%;
         height: 60%;
         width: 1px;
-        background: rgba(184, 138, 53, .25);
+        background: rgba(201, 168, 76, 0.25);
     }
 }
 
 @media (max-width: 600px) {
     :root {
         --section-pad: 4rem 0;
-    }
-
-    .hero__actions {
-        flex-direction: column;
-        align-items: start;
-        
     }
 
     .values__grid {
@@ -1411,7 +1278,7 @@ ul {
     }
 
     .newsletter__input {
-        border-right: 1px solid rgba(184, 138, 53, .25);
+        border-right: 1px solid rgba(201, 168, 76, 0.25);
         border-bottom: none;
     }
 
