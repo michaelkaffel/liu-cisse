@@ -405,7 +405,10 @@ ul {
 }
 
 .hero__inner {
-    padding: var(--space-xl) 2rem;
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-md);
+    padding-right: 2rem;
+    padding-left: 2rem;
     max-width: var(--max-w);
     margin: 0 auto;
     width: 100%;
@@ -487,14 +490,14 @@ ul {
    ------------------------------------------------------------ */
 .values {
     background: var(--forest);
-    border: solid 1px var(--gold);
-    padding: var(--space-lg) 0;
-    margin: 2rem;
+    /* border: solid 1px var(--gold); */
+    padding: var(--space-md) 0;
+    /* margin: var(--space-xs); */
 }
 
 .values .t-eyebrow {
-    margin-top: -1rem;
-    margin-bottom: .5rem;
+    margin-top: -0.5rem;
+    /* margin-bottom: 0.5rem; */
     letter-spacing: 0.3rem;
     opacity: 0.9;
     color: var(--gold);
