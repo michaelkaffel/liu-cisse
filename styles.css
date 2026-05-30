@@ -399,6 +399,7 @@ ul {
 }
 
 .hero__eyebrow {
+    margin-top: -3rem;
     margin-bottom: 1.5rem;
     color: #b5703a;
 }
@@ -410,7 +411,7 @@ ul {
 
 .hero__subhead {
     max-width: 560px;
-    margin-bottom: 2.5rem;
+    margin-bottom: -3rem;
     font-size: 1.05rem;
     color: var(--charcoal);
     font-weight: 300;
@@ -418,7 +419,7 @@ ul {
     opacity: 0.75;
 }
 
-.hero__cta {
+/* .hero__cta {
     display: inline-block;
     font-family: var(--sans);
     font-size: 0.75rem;
@@ -429,22 +430,18 @@ ul {
     background: var(--gold);
     padding: 1rem 2.5rem;
     transition: background 0.25s;
-}
+} */
 
-.hero__cta:hover {
+/* .hero__cta:hover {
     background: var(--gold-pale);
-}
+} */
 
 .hero__scroll-hint {
-    position: absolute;
-    bottom: 2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    opacity: 0.4;
+    margin-left: -.15em;
+    height: 0.75em;
+    vertical-align: middle;
 }
 
 .hero__scroll-hint span {
@@ -455,8 +452,9 @@ ul {
 }
 
 .hero__scroll-line {
-    width: 4px;
-    height: 40px;
+    display: block;
+    width: 1px;
+    height: 100%;
     background: var(--gold-dim);
     animation: scrollPulse 2s ease-in-out infinite;
 }
@@ -479,8 +477,15 @@ ul {
    7. VALUES BAR
    ------------------------------------------------------------ */
 .values {
-    background: var(--forest);
+    background: #0b1f1c;
     padding: var(--space-lg) 0;
+}
+
+.values .t-eyebrow {
+    margin-top: -1rem;
+    margin-bottom: .5rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.9;
 }
 
 .values__grid {
@@ -489,20 +494,49 @@ ul {
     gap: 0;
 }
 
+.values__square-title {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
 .values__item {
-    padding: 2.5rem 2rem;
+    padding: 3rem 2.5rem;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
 }
 
 .values__item+.values__item::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 20%;
-    height: 60%;
+    top: 10%;
+    height: 80%;
     width: 1px;
-    background: rgba(201, 168, 76, 0.25);
+    background: rgba(201, 168, 76, 0.35);
+}
+
+/* Serif title ABOVE icon — matches reference layout */
+.values__item .services__card-title {
+    font-family: var(--serif);
+    font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+    font-weight: 500;
+    color: var(--ivory);
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+    display: block;
+    order: -1;
+    min-height: 3.8rem;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
 }
 
 .values__icon {
@@ -510,25 +544,28 @@ ul {
     height: 48px;
     margin: 0 auto 1.25rem;
     color: var(--gold);
+    stroke-width: 1.25;
 }
 
 .values__label {
     font-family: var(--sans);
     font-size: 0.65rem;
     font-weight: 500;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.28em;
     text-transform: uppercase;
     color: var(--gold);
-    margin-bottom: 0.75rem;
-    line-height: 1.5;
+    margin-bottom: 1rem;
+    line-height: 1.7;
 }
 
 .values__desc {
     font-family: var(--sans);
-    font-size: 0.88rem;
+    font-size: 0.92rem;
     font-weight: 300;
-    color: var(--ivory-dim);
-    line-height: 1.7;
+    color: rgba(245, 240, 232, 0.65);
+    line-height: 1.8;
+    max-width: 220px;
+    margin: 0 auto;
 }
 
 /* ------------------------------------------------------------
@@ -648,7 +685,11 @@ ul {
    11. FOUNDER
    ------------------------------------------------------------ */
 .founder {
-    background: var(--charcoal);
+    background: var(--ivory);
+}
+
+.founder.section--charcoal {
+    background: var(--ivory);
 }
 
 .founder__inner {
@@ -656,11 +697,19 @@ ul {
     margin: 0 auto;
 }
 
+.founder .t-eyebrow {
+    color: var(--gold-dim)
+}
+
+.founder .divider-gold {
+    background: var(--gold-dim);
+}
+
 .founder__name {
     font-family: var(--serif);
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 500;
-    color: var(--ivory);
+    color: var(--charcoal);
     margin-bottom: 0.5rem;
 }
 
@@ -668,7 +717,7 @@ ul {
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.12em;
-    color: var(--gold);
+    color: #b5703a;
     text-transform: uppercase;
     line-height: 1.8;
     margin-bottom: 2rem;
@@ -681,14 +730,15 @@ ul {
 .founder__bio .t-body {
     font-size: 0.8rem;
     line-height: 1.75;
+    color: rgba(20, 20, 20, 0.8);
 }
 
 .founder__credentials {
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(201, 168, 76, 0.2);
+    border-top: 1px solid rgba(201, 168, 76, 0.35);
     font-size: 0.85rem;
-    color: var(--ivory-dim);
+    color: rgba(20, 20, 20, 1);
     line-height: 2;
 }
 
@@ -707,15 +757,15 @@ ul {
     font-weight: 400;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--gold);
-    border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+    color: #b5703a;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.35);
     padding-bottom: 2px;
     transition: border-color 0.2s, color 0.2s;
 }
 
 .founder__link:hover {
-    color: var(--gold-pale);
-    border-color: var(--gold-pale);
+    color: var(--gold);
+    border-color: var(--gold);
 }
 
 .founder__link svg {
@@ -727,7 +777,7 @@ ul {
    12. QUOTE BLOCK
    ------------------------------------------------------------ */
 .quote-block {
-    background: var(--forest);
+    background: #0b1f1c;
     padding: 3rem 0;
 }
 
@@ -756,7 +806,6 @@ ul {
     font-size: clamp(1rem, 2vw, 1.4rem);
     font-weight: 400;
     font-style: italic;
-    line-height: 1.45;
     color: var(--ivory);
 }
 
@@ -769,12 +818,29 @@ ul {
 .quote-block__mark {
     font-family: var(--serif);
     font-size: 3rem;
-    line-height: 0.5;
+    line-height: 0.3;
     color: var(--gold);
     opacity: 0.4;
 }
 
+.quote-block__mark-end {
+    font-family: var(--serif);
+    font-size: 3rem;
+    line-height: 0.3;
+    color: var(--gold);
+    opacity: 0.4;
+    padding-top: 1rem;
+}
+
 .quote-block__sig {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--gold);
+}
+
+.quote-block__mark__end {
+    margin-left: rem;
     font-family: var(--serif);
     font-size: 1.4rem;
     font-style: italic;
