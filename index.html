@@ -1,459 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liu-Cissé Holdings, Inc.</title>
-  <meta name="description" content="Human systems governance for AI in healthcare, workforce, and public infrastructure.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liu-Cissé Holdings, Inc.</title>
+    <meta name="description"
+        content="Human systems governance for AI in healthcare, workforce, and public infrastructure.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Libre+Franklin:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <!-- ============================================================
+    <!-- ============================================================
        NAV
        ============================================================ -->
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#hero" class="nav__wordmark">
-        <!-- LC Monogram SVG -->
-        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect x="0.5" y="0.5" width="35" height="35" stroke="#c9a84c" stroke-opacity="0.5"/>
-          <text x="5" y="25" font-family="Cormorant Garamond, Georgia, serif" font-size="18" font-weight="500" fill="#c9a84c" letter-spacing="1">LC</text>
-        </svg>
-        <span class="nav__wordmark-text">Liu-Cissé</span>
-      </a>
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__wordmark">
+                <!-- LC Monogram SVG -->
+                <!-- <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="0.5" y="0.5" width="35" height="35" stroke="#c9a84c" stroke-opacity="0.5" />
+                    <text x="5" y="25" font-family="Cormorant Garamond, Georgia, serif" font-size="18" font-weight="500"
+                        fill="#c9a84c" letter-spacing="1">LC</text>
+                </svg> -->
+                <img src="assets/liucisse_logo.png" class="nav-logo">
+                <span class="nav__wordmark-text">Liu-Cissé</span>
+            </a>
 
-      <ul class="nav__links">
-        <li><a href="#work">The Work</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#global">Global</a></li>
-        <li><a href="#founder">Founder</a></li>
-        <li><a href="#affiliations">Affiliations</a></li>
-        <li><a href="https://calendly.com/liucisse" target="_blank" rel="noopener" class="nav__cta">Schedule a Conversation</a></li>
-      </ul>
+            <ul class="nav__links">
+                <li><a href="#work">The Work</a></li>
+                <li><a href="#global">Global</a></li>
+                <li><a href="#founder">Founder</a></li>
+                <li><a href="https://calendly.com/liucisse" target="_blank" rel="noopener" class="nav__cta">Schedule a
+                        Conversation</a></li>
+            </ul>
 
-      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+            <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div class="nav__drawer" id="drawer" role="dialog" aria-label="Navigation menu">
+        <a href="#work" class="drawer-link">The Work</a>
+        <a href="#services" class="drawer-link">Services</a>
+        <a href="#global" class="drawer-link">Global</a>
+        <a href="#founder" class="drawer-link">Founder</a>
+        <a href="#affiliations" class="drawer-link">Affiliations</a>
+        <a href="https://calendly.com/liucisse" target="_blank" rel="noopener" class="nav__cta">Schedule a
+            Conversation</a>
     </div>
-  </nav>
-
-  <!-- Mobile drawer -->
-  <div class="nav__drawer" id="drawer" role="dialog" aria-label="Navigation menu">
-    <a href="#work" class="drawer-link">The Work</a>
-    <a href="#services" class="drawer-link">Services</a>
-    <a href="#global" class="drawer-link">Global</a>
-    <a href="#founder" class="drawer-link">Founder</a>
-    <a href="#affiliations" class="drawer-link">Affiliations</a>
-    <a href="https://calendly.com/liucisse" target="_blank" rel="noopener" class="nav__cta">Schedule a Conversation</a>
-  </div>
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        HERO
        ============================================================ -->
-  <section class="hero section--navy" id="hero">
-    <div class="hero__inner">
-      <p class="t-eyebrow hero__eyebrow">Governance for the Living System</p>
-      <h1 class="t-display hero__headline">
-        Where clinical truth<br>meets AI governance.
-      </h1>
-      <p class="hero__subhead">
-        Human systems strategy for organizations deploying technology into healthcare, workforce, and public infrastructure — across continents, at the pace reality demands.
-      </p>
-      <a href="https://calendly.com/liucisse" target="_blank" rel="noopener" class="hero__cta">Schedule a Strategic Conversation</a>
-    </div>
-    <div class="hero__scroll-hint" aria-hidden="true">
-      <span>Scroll</span>
-      <div class="hero__scroll-line"></div>
-    </div>
-  </section>
+    <section class="hero section--navy" id="hero">
+        <div class="hero__inner">
+            <p class="t-eyebrow hero__eyebrow">Governance for the Living System</p>
+            <h1 class="t-display hero__headline">
+                Where clinical truth<br>meets AI governance.
+            </h1>
+            <p class="hero__subhead">
+                Human systems strategy for organizations deploying technology into healthcare, workforce, and public
+                infrastructure — across continents, at the pace reality demands.
+            </p>
+        </div>
+        <div class="hero__scroll-hint" aria-hidden="true">
+
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        VALUES BAR
        ============================================================ -->
-  <section class="values" aria-label="Core values">
-    <div class="container">
-      <div class="values__grid">
+    <section class="values" aria-label="Core values">
+        <div class="container">
+            <p class="t-eyebrow text-center">How We Work</p>
+            <div class="values__grid">
+                <div class="values__item">
+                    <h3 class="services__card-title">Executive Advisory</h3>
+                    <!-- Globe icon -->
+                    <svg class="values__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="24" cy="24" r="19" />
+                        <ellipse cx="24" cy="24" rx="9" ry="19" />
+                        <line x1="5" y1="24" x2="43" y2="24" />
+                        <path d="M8 14 Q24 20 40 14" />
+                        <path d="M8 34 Q24 28 40 34" />
+                    </svg>
+                    <p class="values__label">Global<br>Perspective</p>
+                    <p class="values__desc">Uniting continents through innovation and purpose.</p>
 
-        <div class="values__item">
-          <!-- Globe icon -->
-          <svg class="values__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="24" cy="24" r="19"/>
-            <ellipse cx="24" cy="24" rx="9" ry="19"/>
-            <line x1="5" y1="24" x2="43" y2="24"/>
-            <path d="M8 14 Q24 20 40 14"/>
-            <path d="M8 34 Q24 28 40 34"/>
-          </svg>
-          <p class="values__label">Global<br>Perspective</p>
-          <p class="values__desc">Uniting continents through innovation and purpose.</p>
+                </div>
+
+                <div class="values__item">
+                    <h3 class="services__card-title">Implementation Design</h3>
+                    <!-- Heart-hands icon -->
+                    <svg class="values__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M24 38 C24 38 8 28 8 18 C8 13 12 9 17 9 C20 9 22.5 10.5 24 13 C25.5 10.5 28 9 31 9 C36 9 40 13 40 18 C40 28 24 38 24 38Z" />
+                        <path d="M16 40 C16 40 12 36 10 32" />
+                        <path d="M32 40 C32 40 36 36 38 32" />
+                        <path d="M16 40 L32 40" />
+                    </svg>
+                    <p class="values__label">Human<br>Dignity</p>
+                    <p class="values__desc">Centering care, equity, and the human experience.</p>
+
+                </div>
+
+                <div class="values__item">
+                    <h3 class="services__card-title">Though Leadership</h3>
+                    <!-- Brain circuit icon -->
+                    <svg class="values__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M20 10 C14 10 9 15 9 21 C9 24 10.5 27 13 29 C11 30 10 32 10 34 C10 37 12.5 39 16 39 L32 39 C35.5 39 38 37 38 34 C38 32 37 30 35 29 C37.5 27 39 24 39 21 C39 15 34 10 28 10 Z" />
+                        <line x1="24" y1="10" x2="24" y2="15" />
+                        <line x1="16" y1="20" x2="20" y2="20" />
+                        <line x1="28" y1="20" x2="32" y2="20" />
+                        <line x1="18" y1="28" x2="22" y2="28" />
+                        <line x1="26" y1="28" x2="30" y2="28" />
+                        <circle cx="24" cy="24" r="2" fill="currentColor" />
+                    </svg>
+                    <p class="values__label">AI<br>Governance</p>
+                    <p class="values__desc">Responsible technology. Real-world impact.</p>
+                </div>
+
+                <div class="values__item">
+                    <h3 class="services__card-title">Policy & Research</h3>
+                    <!-- Handshake icon -->
+                    <svg class="values__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 28 L14 20 L20 22 L26 18 L34 22" />
+                        <path d="M34 22 L42 28" />
+                        <path d="M14 20 L18 32 L26 36 L38 28" />
+                        <path d="M6 28 L10 38 L18 32" />
+                        <path d="M20 22 L24 30" />
+                    </svg>
+                    <p class="values__label">Partnership<br>&amp; Impact</p>
+                    <p class="values__desc">Sustainable solutions. Shared prosperity.</p>
+                </div>
+
+            </div>
         </div>
-
-        <div class="values__item">
-          <!-- Heart-hands icon -->
-          <svg class="values__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M24 38 C24 38 8 28 8 18 C8 13 12 9 17 9 C20 9 22.5 10.5 24 13 C25.5 10.5 28 9 31 9 C36 9 40 13 40 18 C40 28 24 38 24 38Z"/>
-            <path d="M16 40 C16 40 12 36 10 32"/>
-            <path d="M32 40 C32 40 36 36 38 32"/>
-            <path d="M16 40 L32 40"/>
-          </svg>
-          <p class="values__label">Human<br>Dignity</p>
-          <p class="values__desc">Centering care, equity, and the human experience.</p>
-        </div>
-
-        <div class="values__item">
-          <!-- Brain circuit icon -->
-          <svg class="values__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M20 10 C14 10 9 15 9 21 C9 24 10.5 27 13 29 C11 30 10 32 10 34 C10 37 12.5 39 16 39 L32 39 C35.5 39 38 37 38 34 C38 32 37 30 35 29 C37.5 27 39 24 39 21 C39 15 34 10 28 10 Z"/>
-            <line x1="24" y1="10" x2="24" y2="15"/>
-            <line x1="16" y1="20" x2="20" y2="20"/>
-            <line x1="28" y1="20" x2="32" y2="20"/>
-            <line x1="18" y1="28" x2="22" y2="28"/>
-            <line x1="26" y1="28" x2="30" y2="28"/>
-            <circle cx="24" cy="24" r="2" fill="currentColor"/>
-          </svg>
-          <p class="values__label">AI<br>Governance</p>
-          <p class="values__desc">Responsible technology. Real-world impact.</p>
-        </div>
-
-        <div class="values__item">
-          <!-- Handshake icon -->
-          <svg class="values__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M6 28 L14 20 L20 22 L26 18 L34 22"/>
-            <path d="M34 22 L42 28"/>
-            <path d="M14 20 L18 32 L26 36 L38 28"/>
-            <path d="M6 28 L10 38 L18 32"/>
-            <path d="M20 22 L24 30"/>
-          </svg>
-          <p class="values__label">Partnership<br>&amp; Impact</p>
-          <p class="values__desc">Sustainable solutions. Shared prosperity.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        THE WORK (SYSTEMS THESIS)
        ============================================================ -->
-  <section class="section section--charcoal work" id="work">
-    <div class="container">
-      <div class="work__inner">
-        <div class="work__left">
-          <p class="t-eyebrow">The Work</p>
-          <div class="divider-gold" style="margin-top: 1rem;"></div>
-          <h2 class="t-display-sm" style="margin-top: 1.5rem;">The bottleneck is not technical.<br>It is human.</h2>
-          <p class="work__thesis">AI does not fail because models are unintelligent. It fails because institutions underestimate the complexity of human systems.</p>
+    <section class="section section--charcoal work" id="work">
+        <div class="container">
+            <div class="work__inner">
+                <div class="work__left">
+                    <p class="t-eyebrow">The Work</p>
+                    <div class="divider-gold" style="margin-top: 1rem;"></div>
+                    <h2 class="t-display-sm" style="margin-top: 1.5rem;">The bottleneck is not technical.<br>It is
+                        human.</h2>
+                    <p class="work__thesis">AI does not fail because models are unintelligent. It fails because
+                        institutions underestimate the complexity of human systems.</p>
+                </div>
+                <div class="work__right">
+                    <p class="t-body">Technology deployments into healthcare and public systems — whether legacy EHR,
+                        supply chain, scheduling, or AI — fail when the human implementation layer is missing: the
+                        governance architecture, workforce readiness, and operational redesign that sit between policy
+                        and practice.</p>
+                    <p class="t-body">We are systems-level strategy partners for organizations whose AI investments live
+                        inside complex human contexts. We convene historically siloed perspectives — clinical,
+                        operational, ethical, commercial — to provide the holistic lens required to traverse the gap
+                        between theoretical ambition and real-world deployment.</p>
+                    <p class="t-body">Our founder has carried enterprise quota, built markets, and closed deals. This is
+                        not a policy practice. It is an operating partner for leaders who need AI governance that ships,
+                        scales, and sustains revenue.</p>
+                </div>
+            </div>
         </div>
-        <div class="work__right">
-          <p class="t-body">Technology deployments into healthcare and public systems — whether legacy EHR, supply chain, scheduling, or AI — fail when the human implementation layer is missing: the governance architecture, workforce readiness, and operational redesign that sit between policy and practice.</p>
-          <p class="t-body">We are systems-level strategy partners for organizations whose AI investments live inside complex human contexts. We convene historically siloed perspectives — clinical, operational, ethical, commercial — to provide the holistic lens required to traverse the gap between theoretical ambition and real-world deployment.</p>
-          <p class="t-body">Our founder has carried enterprise quota, built markets, and closed deals. This is not a policy practice. It is an operating partner for leaders who need AI governance that ships, scales, and sustains revenue.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- ============================================================
-       HOW WE WORK (SERVICES)
-       ============================================================ -->
-  <section class="section services" id="services">
-    <div class="container">
-      <div class="services__header">
-        <p class="t-eyebrow">How We Work</p>
-        <div class="divider-gold divider-gold--center" style="margin-top: 1rem;"></div>
-        <h2 class="t-display-sm" style="margin-top: 1.5rem;">Three modes of engagement.</h2>
-      </div>
-      <div class="services__grid">
-
-        <div class="services__card">
-          <span class="services__card-num">01</span>
-          <h3 class="services__card-title">Executive Advisory</h3>
-          <p class="services__card-body">Policy that survives contact with operations. We design decision frameworks, risk structures, and implementation protocols for organizations deploying existing and emerging technologies — including AI — into clinical, operational, and public-facing systems, moving from pilot to production without breaking what matters.</p>
-        </div>
-
-        <div class="services__card">
-          <span class="services__card-num">02</span>
-          <h3 class="services__card-title">Implementation Design</h3>
-          <p class="services__card-body">Workforce readiness infrastructure, go-to-market alignment for emerging health technologies, and cross-border program architecture. We build the operational layer that makes policy executable, technology adoptable, and investment sustainable.</p>
-        </div>
-
-        <div class="services__card">
-          <span class="services__card-num">03</span>
-          <h3 class="services__card-title">Thought Leadership</h3>
-          <p class="services__card-body">Speaking, publications, and policy contribution at the intersection of AI governance, health systems, and human capacity. Available for keynotes, advisory panels, and institutional consultation.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        GLOBAL POSITIONING (MAP)
        ============================================================ -->
-  <section class="section map-section section--navy" id="global">
-    <div class="container">
-      <div class="map-section__header">
-        <p class="t-eyebrow">Global Positioning</p>
-        <div class="divider-gold divider-gold--center" style="margin-top: 1rem;"></div>
-        <h2 class="t-display-sm" style="margin-top: 1.5rem; text-align: center;">Operating across continents.</h2>
-        <p class="map-section__subtitle">United States &nbsp;·&nbsp; Taiwan &nbsp;·&nbsp; Senegal &nbsp;·&nbsp; Europe</p>
-      </div>
-      <div class="map-wrap">
-        <!-- World map SVG with nodes -->
-        <svg viewBox="0 0 860 460" xmlns="http://www.w3.org/2000/svg" aria-label="World map showing Liu-Cissé operations in United States, Taiwan, Senegal, and Europe">
+    <section class="map-section section--navy" id="global">
+        <div class="container">
+            <div class="map-section__header">
+                <h2 class="t-display-sm" style="margin-top: .1rem; text-align: center;">Operating across continents.
+                </h2>
+                <p class="map-section__subtitle">United States &nbsp;·&nbsp; Taiwan &nbsp;·&nbsp; Senegal &nbsp;·&nbsp;
+                    Europe</p>
+            </div>
+            <div class="map-wrap">
+                <!-- World map SVG with nodes -->
+                <svg viewBox="0 0 860 400" xmlns="http://www.w3.org/2000/svg"
+                    aria-label="World map showing Liu-Cissé operations in United States, Taiwan, Senegal, and Europe">
 
-          <!-- Simplified world landmasses -->
-          <g fill="rgba(201,168,76,0.08)" stroke="rgba(201,168,76,0.25)" stroke-width="0.5">
-            <!-- North America -->
-            <path d="M80,100 L85,90 L100,85 L130,82 L160,80 L180,85 L195,95 L210,100 L215,115 L220,130 L215,145 L205,160 L195,175 L185,190 L175,200 L160,210 L145,215 L130,210 L115,205 L100,195 L88,182 L80,168 L72,152 L70,138 L72,122 Z"/>
-            <!-- Central America & Caribbean -->
-            <path d="M155,215 L175,210 L185,220 L180,235 L165,230 Z"/>
-            <!-- South America -->
-            <path d="M165,240 L185,225 L205,230 L220,245 L230,265 L235,290 L230,315 L220,335 L205,350 L190,360 L175,355 L162,340 L152,320 L148,298 L150,272 L157,252 Z"/>
-            <!-- Europe -->
-            <path d="M380,80 L395,75 L415,78 L430,85 L440,95 L445,110 L440,122 L428,128 L415,125 L400,120 L388,112 L380,100 Z"/>
-            <!-- Africa -->
-            <path d="M375,140 L395,130 L420,132 L440,140 L452,158 L458,180 L456,205 L450,228 L438,248 L422,260 L405,265 L388,260 L374,245 L364,225 L360,202 L362,178 L368,158 Z"/>
-            <!-- Asia -->
-            <path d="M460,70 L490,60 L530,58 L570,62 L605,70 L630,82 L645,98 L648,115 L638,130 L620,138 L600,140 L578,135 L555,128 L530,122 L505,118 L480,112 L462,102 L455,88 Z"/>
-            <!-- Southeast Asia & Taiwan area -->
-            <path d="M620,140 L648,132 L668,140 L672,158 L660,172 L642,170 L626,160 Z"/>
-            <!-- Australia -->
-            <path d="M660,290 L690,278 L720,280 L740,295 L745,315 L735,332 L715,340 L692,338 L672,325 L660,308 Z"/>
-          </g>
+                    <!-- Simplified world landmasses -->
+                    <g fill="rgba(201,168,76,0.08)" stroke="rgba(201,168,76,0.25)" stroke-width="0.5">
+                        <!-- North America -->
+                        <path
+                            d="M80,100 L85,90 L100,85 L130,82 L160,80 L180,85 L195,95 L210,100 L215,115 L220,130 L215,145 L205,160 L195,175 L185,190 L175,200 L160,210 L145,215 L130,210 L115,205 L100,195 L88,182 L80,168 L72,152 L70,138 L72,122 Z" />
+                        <!-- Central America & Caribbean -->
+                        <path d="M155,215 L175,210 L185,220 L180,235 L165,230 Z" />
+                        <!-- South America -->
+                        <path
+                            d="M165,240 L185,225 L205,230 L220,245 L230,265 L235,290 L230,315 L220,335 L205,350 L190,360 L175,355 L162,340 L152,320 L148,298 L150,272 L157,252 Z" />
+                        <!-- Europe -->
+                        <path
+                            d="M380,80 L395,75 L415,78 L430,85 L440,95 L445,110 L440,122 L428,128 L415,125 L400,120 L388,112 L380,100 Z" />
+                        <!-- Africa -->
+                        <path
+                            d="M375,140 L395,130 L420,132 L440,140 L452,158 L458,180 L456,205 L450,228 L438,248 L422,260 L405,265 L388,260 L374,245 L364,225 L360,202 L362,178 L368,158 Z" />
+                        <!-- Asia -->
+                        <path
+                            d="M460,70 L490,60 L530,58 L570,62 L605,70 L630,82 L645,98 L648,115 L638,130 L620,138 L600,140 L578,135 L555,128 L530,122 L505,118 L480,112 L462,102 L455,88 Z" />
+                        <!-- Southeast Asia & Taiwan area -->
+                        <path d="M620,140 L648,132 L668,140 L672,158 L660,172 L642,170 L626,160 Z" />
+                        <!-- Australia -->
+                        <path
+                            d="M660,290 L690,278 L720,280 L740,295 L745,315 L735,332 L715,340 L692,338 L672,325 L660,308 Z" />
+                    </g>
 
-          <!-- Connection lines -->
-          <g stroke="rgba(201,168,76,0.2)" stroke-width="0.75" fill="none" stroke-dasharray="3 4">
-            <!-- US to Senegal -->
-            <path d="M158,170 Q260,120 378,198"/>
-            <!-- US to Taiwan -->
-            <path d="M158,170 Q380,80 648,152"/>
-            <!-- US to Europe -->
-            <path d="M158,170 Q268,100 410,102"/>
-            <!-- Taiwan to Senegal -->
-            <path d="M648,152 Q520,180 378,198"/>
-            <!-- Europe to Senegal -->
-            <path d="M410,102 Q396,148 378,198"/>
-          </g>
+                    <!-- Connection lines -->
+                    <g stroke="rgba(201,168,76,0.2)" stroke-width="0.75" fill="none" stroke-dasharray="3 4">
+                        <!-- US to Senegal -->
+                        <path d="M158,170 Q260,120 378,198" />
+                        <!-- US to Taiwan -->
+                        <path d="M158,170 Q380,80 648,152" />
+                        <!-- US to Europe -->
+                        <path d="M158,170 Q268,100 410,102" />
+                        <!-- Taiwan to Senegal -->
+                        <path d="M648,152 Q520,180 378,198" />
+                        <!-- Europe to Senegal -->
+                        <path d="M410,102 Q396,148 378,198" />
+                    </g>
 
-          <!-- Node: United States -->
-          <g transform="translate(158,170)">
-            <circle r="6" fill="var(--gold)" opacity="0.9"/>
-            <circle r="12" fill="none" stroke="var(--gold)" stroke-width="0.75" opacity="0.4"/>
-            <text x="0" y="-18" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="9" font-weight="500" fill="#c9a84c" letter-spacing="1.5">UNITED STATES</text>
-          </g>
+                    <!-- Node: United States -->
+                    <g transform="translate(158,170)">
+                        <circle r="6" fill="var(--gold)" opacity="0.9" />
+                        <circle r="12" fill="none" stroke="var(--gold)" stroke-width="0.75" opacity="0.4" />
+                        <text x="0" y="-18" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="9"
+                            font-weight="500" fill="#c9a84c" letter-spacing="1.5">UNITED STATES</text>
+                    </g>
 
-          <!-- Node: Senegal -->
-          <g transform="translate(378,198)">
-            <circle r="6" fill="var(--gold)" opacity="0.9"/>
-            <circle r="12" fill="none" stroke="var(--gold)" stroke-width="0.75" opacity="0.4"/>
-            <text x="0" y="-18" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="9" font-weight="500" fill="#c9a84c" letter-spacing="1.5">SENEGAL</text>
-          </g>
+                    <!-- Node: Senegal -->
+                    <g transform="translate(378,198)">
+                        <circle r="6" fill="var(--gold)" opacity="0.9" />
+                        <circle r="12" fill="none" stroke="var(--gold)" stroke-width="0.75" opacity="0.4" />
+                        <text x="0" y="-18" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="9"
+                            font-weight="500" fill="#c9a84c" letter-spacing="1.5">SENEGAL</text>
+                    </g>
 
-          <!-- Node: Europe -->
-          <g transform="translate(410,102)">
-            <circle r="6" fill="var(--gold)" opacity="0.9"/>
-            <circle r="12" fill="none" stroke="var(--gold)" stroke-width="0.75" opacity="0.4"/>
-            <text x="12" y="4" text-anchor="start" font-family="Libre Franklin, sans-serif" font-size="9" font-weight="500" fill="#c9a84c" letter-spacing="1.5">EUROPE</text>
-          </g>
+                    <!-- Node: Europe -->
+                    <g transform="translate(410,102)">
+                        <circle r="6" fill="var(--gold)" opacity="0.9" />
+                        <circle r="12" fill="none" stroke="var(--gold)" stroke-width="0.75" opacity="0.4" />
+                        <text x="12" y="4" text-anchor="start" font-family="Libre Franklin, sans-serif" font-size="9"
+                            font-weight="500" fill="#c9a84c" letter-spacing="1.5">EUROPE</text>
+                    </g>
 
-          <!-- Node: Taiwan -->
-          <g transform="translate(648,152)">
-            <circle r="6" fill="var(--gold)" opacity="0.9"/>
-            <circle r="12" fill="none" stroke="var(--gold)" stroke-width="0.75" opacity="0.4"/>
-            <text x="0" y="-18" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="9" font-weight="500" fill="#c9a84c" letter-spacing="1.5">TAIWAN</text>
-          </g>
+                    <!-- Node: Taiwan -->
+                    <g transform="translate(648,152)">
+                        <circle r="6" fill="var(--gold)" opacity="0.9" />
+                        <circle r="12" fill="none" stroke="var(--gold)" stroke-width="0.75" opacity="0.4" />
+                        <text x="0" y="-18" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="9"
+                            font-weight="500" fill="#c9a84c" letter-spacing="1.5">TAIWAN</text>
+                    </g>
 
-        </svg>
-      </div>
-    </div>
-  </section>
+                </svg>
+            </div>
+        </div>
+    </section>
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        FOUNDER
        ============================================================ -->
-  <section class="section founder section--charcoal" id="founder">
-    <div class="container">
-      <div class="founder__inner">
-        <p class="t-eyebrow">Founder</p>
-        <div class="divider-gold" style="margin-top: 1rem; margin-bottom: 2rem;"></div>
-        <h2 class="founder__name">Eboney Liu-White</h2>
-        <p class="founder__title">
-          RN &nbsp;·&nbsp; MHA &nbsp;·&nbsp; MSN(c)<br>
-          Certified in Digital Health (CDH-E) &nbsp;·&nbsp; Certified Ethical Emerging Technologist (CEET)<br>
-          Founder &amp; Executive Chair, Liu-Cissé Holdings, Inc.
-        </p>
-        <div class="founder__bio">
-          <p class="t-body">Twenty-two years across clinical practice, healthcare data analytics, enterprise technology sales, and AI ethics. Hands-on across the full technology lifecycle — solutions requirements, product development, deployment, red-teaming, and post-implementation review — spanning startup applications to established enterprise systems: EHR, clinical imaging, revenue cycle, care coordination, fraud detection, and global consumer AI including Google Gemini, DeepMind, and YouTube health features.</p>
-          <p class="t-body">$8–10M enterprise portfolios at Change Healthcare/Optum. Predictive analytics and compliance systems at IBM/Truven. Bioethics and AI principles review contracted with Google Health. She advises where technology meets human capacity, where policy meets practice, and where ethical governance determines whether innovation serves or extracts.</p>
-          <p class="t-body">Currently operating from Taiwan and the United States, with active advisory work across AI governance and health systems architecture on the African continent through the Smart Africa AI Council.</p>
+    <section class="section founder section--charcoal" id="founder">
+        <div class="container">
+            <div class="founder__inner">
+                <p class="t-eyebrow">Founder</p>
+                <div class="divider-gold" style="margin-top: 1rem; margin-bottom: 2rem;"></div>
+                <h2 class="founder__name">Eboney Liu-White</h2>
+                <p class="founder__title">
+                    RN &nbsp;·&nbsp; MHA &nbsp;·&nbsp; MSN(c)<br>
+                    Certified in Digital Health (CDH-E) &nbsp;·&nbsp; Certified Ethical Emerging Technologist (CEET)<br>
+                    Founder &amp; Executive Chair, Liu-Cissé Holdings, Inc.
+                </p>
+                <div class="founder__bio">
+                    <p class="t-body">Twenty-two years across clinical practice, healthcare data analytics, enterprise
+                        technology sales, and AI ethics. Hands-on across the full technology lifecycle — solutions
+                        requirements, product development, deployment, red-teaming, and post-implementation review —
+                        spanning startup applications to established enterprise systems: EHR, clinical imaging, revenue
+                        cycle, care coordination, fraud detection, and global consumer AI including Google Gemini,
+                        DeepMind, and YouTube health features.</p>
+                    <p class="t-body">$8–10M enterprise portfolios at Change Healthcare/Optum. Predictive analytics and
+                        compliance systems at IBM/Truven. Bioethics and AI principles review contracted with Google
+                        Health. She advises where technology meets human capacity, where policy meets practice, and
+                        where ethical governance determines whether innovation serves or extracts.</p>
+                    <p class="t-body">Currently operating from Taiwan and the United States, with active advisory work
+                        across AI governance and health systems architecture on the African continent through the Smart
+                        Africa AI Council.</p>
+                </div>
+                <div class="founder__credentials">
+                    Smart Africa AI Council &nbsp;·&nbsp; AI Data Ecosystems &amp; AI Investments TWGs<br>
+                    Google Health (contract) &nbsp;·&nbsp; Research Ethics &amp; AI<br>
+                    UKRI Health Data Roundtable &nbsp;·&nbsp; Inaugural Convening
+                </div>
+                <div class="founder__links">
+                    <a href="https://www.linkedin.com/in/eelleven" target="_blank" rel="noopener" class="founder__link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        Personal LinkedIn
+                    </a>
+                    <a href="https://www.linkedin.com/company/liucisse" target="_blank" rel="noopener"
+                        class="founder__link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        Liu-Cissé Holdings
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="founder__credentials">
-          Smart Africa AI Council &nbsp;·&nbsp; AI Data Ecosystems &amp; AI Investments TWGs<br>
-          Google Health (contract) &nbsp;·&nbsp; Research Ethics &amp; AI<br>
-          UKRI Health Data Roundtable &nbsp;·&nbsp; Inaugural Convening
-        </div>
-        <div class="founder__links">
-          <a href="https://www.linkedin.com/in/eelleven" target="_blank" rel="noopener" class="founder__link">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            Personal LinkedIn
-          </a>
-          <a href="https://www.linkedin.com/company/liucisse" target="_blank" rel="noopener" class="founder__link">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            Liu-Cissé Holdings
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        QUOTE BLOCK
        ============================================================ -->
-  <section class="quote-block" id="quote">
-    <div class="quote-block__inner">
-      <!-- Image placeholder — swap src when photo is ready -->
-      <div class="quote-block__img-placeholder" role="img" aria-label="Photo placeholder">
-        <span style="font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(201,168,76,0.3);">Photo — coming soon</span>
-      </div>
-      <div class="quote-block__content">
-        <div>
-          <p class="t-eyebrow">In Her Words</p>
-          <div class="divider-gold" style="margin-top: 1rem;"></div>
+    <section class="quote-block" id="quote">
+        <div class="quote-block__inner">
+            <!-- Image placeholder — swap src when photo is ready -->
+            <img class="quote-block__img" src="assets/founder.png" />
+            <div class="quote-block__content">
+                <div>
+                    <p class="t-eyebrow">In Her Words</p>
+                    <div class="divider-gold" style="margin-top: 1rem;"></div>
+                </div>
+                <div class="quote-block__mark" aria-hidden="true">"</div>
+                <blockquote class="t-quote">
+                    Some encounters change your direction forever. The responsibility after that is to build something
+                    worthy of what you learned.
+                </blockquote>
+                <p class="quote-block__sig">— Liu-Cissé</p>
+            </div>
         </div>
-        <div class="quote-block__mark" aria-hidden="true">"</div>
-        <blockquote class="t-quote">
-          Some encounters change your direction forever. The responsibility after that is to build something worthy of what you learned.
-        </blockquote>
-        <p class="quote-block__sig">— Liu-Cissé</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-
-  <!-- ============================================================
-       AFFILIATIONS
-       ============================================================ -->
-  <section class="section affiliations section--navy" id="affiliations">
-    <div class="container">
-      <div class="affiliations__header">
-        <p class="t-eyebrow">Institutional Affiliations</p>
-        <div class="divider-gold divider-gold--center" style="margin-top: 1rem;"></div>
-        <h2 class="t-display-sm" style="margin-top: 1.5rem; text-align: center;">Operating at the intersection<br>of governance and practice.</h2>
-      </div>
-      <div class="affiliations__grid">
-
-        <div class="affiliations__item">
-          <p class="affiliations__org">Smart Africa AI Council</p>
-          <p class="affiliations__role">AI Data Ecosystems &amp; AI Investments Technical Working Groups</p>
-        </div>
-
-        <div class="affiliations__item">
-          <p class="affiliations__org">Google Health</p>
-          <p class="affiliations__role">Research Ethics &amp; AI — Contract Advisory</p>
-        </div>
-
-        <div class="affiliations__item">
-          <p class="affiliations__org">UKRI Health Data Roundtable</p>
-          <p class="affiliations__role">Inaugural Convening — United Kingdom Research &amp; Innovation</p>
-        </div>
-
-        <div class="affiliations__item">
-          <p class="affiliations__org">Change Healthcare / Optum</p>
-          <p class="affiliations__role">Enterprise Portfolio Leadership — $8–10M</p>
-        </div>
-
-        <div class="affiliations__item">
-          <p class="affiliations__org">IBM / Truven Health Analytics</p>
-          <p class="affiliations__role">Predictive Analytics &amp; Compliance Systems</p>
-        </div>
-
-        <div class="affiliations__item">
-          <p class="affiliations__org">Google DeepMind &amp; YouTube Health</p>
-          <p class="affiliations__role">Bioethics &amp; AI Principles Review — Contract</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        NEWSLETTER SIGNUPS
        ============================================================ -->
-  <section class="section newsletter" id="newsletter">
-    <div class="newsletter__inner container">
+    <section class="section newsletter" id="newsletter">
+        <div class="newsletter__inner">
 
-      <div class="newsletter__block">
-        <p class="newsletter__block-label">Coming Soon</p>
-        <h3 class="newsletter__block-title">Self-Assessment Tools</h3>
-        <p class="newsletter__block-desc">Be notified when diagnostic tools launch — helping your organization identify implementation gaps, governance drift, and workforce strain in AI deployments.</p>
-        <form class="newsletter__form" name="assessment-notify" action="/success" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="assessment-notify">
-          <input class="newsletter__input" type="email" name="email" placeholder="Your email address" required aria-label="Email address for assessment tool notifications">
-          <button class="newsletter__submit" type="submit">Notify Me</button>
-        </form>
-      </div>
+            <div class="newsletter__block">
+                <p class="newsletter__block-label">Coming Soon</p>
+                <h3 class="newsletter__block-title">Self-Assessment Tools</h3>
+                <p class="newsletter__block-desc">Be notified when diagnostic tools launch — helping your organization
+                    identify implementation gaps, governance drift, and workforce strain in AI deployments.</p>
+                <form class="newsletter__form" name="assessment-notify" action="/success" method="POST"
+                    data-netlify="true">
+                    <input type="hidden" name="form-name" value="assessment-notify">
+                    <input class="newsletter__input" type="email" name="email" placeholder="Your email address" required
+                        aria-label="Email address for assessment tool notifications">
+                    <button class="newsletter__submit" type="submit">Notify Me</button>
+                </form>
+            </div>
 
-      <div class="newsletter__divider" aria-hidden="true"></div>
+            <div class="newsletter__divider" aria-hidden="true"></div>
 
-      <div class="newsletter__block">
-        <p class="newsletter__block-label">Stay Informed</p>
-        <h3 class="newsletter__block-title">Writing &amp; Perspectives</h3>
-        <p class="newsletter__block-desc">Occasional writing on AI governance, implementation, and the human layer of health systems — from the field, not the whitepaper.</p>
-        <form class="newsletter__form" name="subscribe" action="/success" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="subscribe">
-          <input class="newsletter__input" type="email" name="email" placeholder="Your email address" required aria-label="Email address for newsletter">
-          <button class="newsletter__submit" type="submit">Subscribe</button>
-        </form>
-      </div>
+            <div class="newsletter__block">
+                <p class="newsletter__block-label">Stay Informed</p>
+                <h3 class="newsletter__block-title">Writing &amp; Perspectives</h3>
+                <p class="newsletter__block-desc">Occasional writing on AI governance, implementation, and the human
+                    layer of health systems — from the field, not the whitepaper.</p>
+                <form class="newsletter__form" name="subscribe" action="/success" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="subscribe">
+                    <input class="newsletter__input" type="email" name="email" placeholder="Your email address" required
+                        aria-label="Email address for newsletter">
+                    <button class="newsletter__submit" type="submit">Subscribe</button>
+                </form>
+            </div>
 
-    </div>
-  </section>
+        </div>
+    </section>
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        CTA
        ============================================================ -->
-  <section class="cta-section" id="contact">
-    <div class="cta-section__inner">
-      <p class="t-eyebrow" style="margin-bottom: 1.25rem;">Start a Conversation</p>
-      <h2 class="t-display-sm cta-section__headline">If your organization is deploying AI into human systems, we should talk.</h2>
-      <p class="cta-section__sub">Strategy that ships. Governance that holds. Implementation that serves.</p>
-      <a href="https://calendly.com/liucisse" target="_blank" rel="noopener" class="cta-btn">Schedule a Strategic Conversation</a>
-    </div>
-  </section>
+    <section class="cta-section" id="contact">
+        <div class="cta-section__inner">
+            <p class="t-eyebrow" style="margin-bottom: 1.25rem;">Start a Conversation</p>
+            <h2 class="t-display-sm cta-section__headline">If your organization is deploying AI into human systems, we
+                should talk.</h2>
+            <p class="cta-section__sub">Strategy that ships. Governance that holds. Implementation that serves.</p>
+            <a href="https://calendly.com/liucisse" target="_blank" rel="noopener" class="cta-btn">Schedule a Strategic
+                Conversation</a>
+        </div>
+    </section>
 
 
-  <!-- ============================================================
+    <!-- ============================================================
        FOOTER
        ============================================================ -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__wordmark">
-        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect x="0.5" y="0.5" width="27" height="27" stroke="#c9a84c" stroke-opacity="0.4"/>
-          <text x="3" y="20" font-family="Cormorant Garamond, Georgia, serif" font-size="14" font-weight="500" fill="#c9a84c" letter-spacing="0.5">LC</text>
-        </svg>
-        <span class="footer__wordmark-text">Liu-Cissé Holdings, Inc.</span>
-      </div>
-      <a href="mailto:eboney@liucisse.com" class="footer__email">eboney@liucisse.com</a>
-      <p class="footer__copy">&copy; 2025–2026 Liu-Cissé Holdings, Inc.</p>
-    </div>
-  </footer>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__wordmark">
+                <!-- <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="0.5" y="0.5" width="27" height="27" stroke="#c9a84c" stroke-opacity="0.4" />
+                    <text x="3" y="20" font-family="Cormorant Garamond, Georgia, serif" font-size="14" font-weight="500"
+                        fill="#c9a84c" letter-spacing="0.5">LC</text>
+                </svg> -->
+                <img src="assets/liucisse_logo.png" class="nav-logo">
+                <span class="footer__wordmark-text">Liu-Cissé Holdings, Inc.</span>
+            </div>
+            <a href="mailto:eboney@liucisse.com" class="footer__email">eboney@liucisse.com</a>
+            <p class="footer__copy">&copy; 2025–2026 Liu-Cissé Holdings, Inc.</p>
+            <div class="footer__legal">
+                <a href="#" data-modal="modal-privacy">Privacy Policy</a>
+                <span>·</span>
+                <a href="#" data-modal="modal-terms">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
 
-  <script src="main.js"></script>
+    <!-- Privacy Modal -->
+    <div class="modal" id="modal-privacy" role="dialog" aria-modal="true" aria-label="Privacy Policy">
+        <div class="modal__box">
+            <button class="modal__close" data-modal="modal-privacy" aria-label="Close">&times;</button>
+            <h2 class="modal__title">Privacy Policy</h2>
+            <div class="modal__body">
+                <p>Liu-Cissé Holdings, Inc. collects only the email addresses you voluntarily submit through this site.
+                    We use these solely to send communications you have requested. We do not sell, share, or transfer
+                    your data to third parties. You may unsubscribe at any time by replying to any email or contacting
+                    us directly at <a href="mailto:eboney@liucisse.com">eboney@liucisse.com</a>.</p>
+                <p>This site does not use tracking cookies or third-party analytics.</p>
+                <p>For inquiries regarding your data, contact: eboney@liucisse.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div class="modal" id="modal-terms" role="dialog" aria-modal="true" aria-label="Terms of Use">
+        <div class="modal__box">
+            <button class="modal__close" data-modal="modal-terms" aria-label="Close">&times;</button>
+            <h2 class="modal__title">Terms of Use</h2>
+            <div class="modal__body">
+                <p>The content on this site is provided for informational purposes only and does not constitute legal,
+                    medical, financial, or professional advice. Engagement of Liu-Cissé Holdings, Inc. for advisory
+                    services is governed by separate written agreements.</p>
+                <p>All content &copy; 2025-2026 Liu-Cissé Holdings, Inc. Unauthorized reproduction is prohibited.</p>
+                <p>Use of this site constitutes acceptance of these terms.</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" defer></script>
 </body>
+
 </html>
