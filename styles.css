@@ -299,16 +299,17 @@ ul {
     font-weight: 500;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--ivory) !important;
-    background: var(--forest);
+    color: var(--forest) !important;
+    background: var(--ivory);
     padding: 0.6rem 1.4rem;
-    transition: background 0.2s !important;
+    transition: background 0.5s, color 0.5s !important;
     border: 1px solid var(--gold);
 }
 
 .nav__cta:hover {
-    background: var(--gold) !important;
-    color: var(--forest) !important;
+    background: var(--forest) !important;
+    color: var(--ivory) !important;
+    border: 1px solid var(--forest);
 }
 
 /* Hamburger */
@@ -422,7 +423,7 @@ ul {
 .hero__eyebrow {
     margin-top: -3rem;
     margin-bottom: 1.5rem;
-    color: var(--copper);
+    color: var(--gold);
 }
 
 .hero__headline {
@@ -438,6 +439,10 @@ ul {
     font-weight: 300;
     line-height: 1.75;
     opacity: 0.75;
+}
+
+.hero__subhead-highlight {
+    font-weight: 800;
 }
 
 .hero__scroll-hint {
@@ -482,7 +487,9 @@ ul {
    ------------------------------------------------------------ */
 .values {
     background: var(--forest);
+    border: solid 1px var(--gold);
     padding: var(--space-lg) 0;
+    margin: 2rem;
 }
 
 .values .t-eyebrow {
@@ -582,6 +589,7 @@ ul {
    ------------------------------------------------------------ */
 .work {
     background: #f3eadc;
+    
 }
 
 .work__inner {
@@ -1154,6 +1162,26 @@ ul {
 }
 
 .cta-btn-2nd:hover {
+    background: var(--teal);
+    color: var(--ivory);
+    border: 1px solid var(--teal);
+}
+
+.cta-btn-cta-section {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ivory);
+    background: var(--forest);
+    padding: 1.1rem 3rem;
+    border: 1px solid var(--forest);
+    transition: background 0.25s;
+}
+
+.cta-btn-cta-section:hover {
     background: var(--teal);
     color: var(--ivory);
 }
