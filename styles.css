@@ -619,6 +619,28 @@ ul {
     padding-left: 1.5rem;
 }
 
+.work__sovereignty {
+    margin-top: 2rem;
+    border: 1px solid rgba(184,138,53,.34);
+    background: rgba(251,245,234,.56);
+    padding: 2rem;
+    box-shadow: 0 24px 70px rgba(7,31,24,.06);
+}
+
+.work__sovereignty h3 {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--forest);
+    margin-bottom: 0.75rem;
+}
+
+.work__sovereignty p {
+    font-size: 0.9rem;
+    color: #6d6254;
+    line-height: 1.75;
+}
+
 /* ------------------------------------------------------------
    9. HOW WE WORK (SERVICES)
    ------------------------------------------------------------ */
