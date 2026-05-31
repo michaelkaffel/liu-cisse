@@ -404,7 +404,7 @@ ul {
 /* ------------------------------------------------------------
    6. HERO
    ------------------------------------------------------------ */
-/* .hero {
+.hero {
     min-height: 60vh;
     display: flex;
     align-items: center;
@@ -412,16 +412,16 @@ ul {
     padding-top: var(--nav-h);
     position: relative;
     overflow: hidden;
-} */
+}
 
-.hero {
+/* Video add */
+/* .hero {
     min-height: 60vh;
     display: flex;
     align-items: center;
     padding-top: var(--nav-h);
     position: relative;
     overflow: hidden;
-    /* remove the background gradient — video replaces it */
 }
 
 .hero__video-bg {
@@ -431,7 +431,8 @@ ul {
     height: 100%;
     object-fit: cover;
     z-index: 0;
-}
+} */
+/* To here */
 
 .hero::after {
     content: '';
@@ -444,7 +445,7 @@ ul {
     opacity: 0.5;
 }
 
-/* .hero__inner {
+.hero__inner {
     padding-top: var(--space-xl);
     padding-bottom: var(--space-md);
     padding-right: 2rem;
@@ -452,9 +453,10 @@ ul {
     max-width: var(--max-w);
     margin: 0 auto;
     width: 100%;
-} */
+}
 
-.hero__inner {
+/* and hero inner below */
+/* .hero__inner {
     position: relative;
     z-index: 1;
     padding-top: var(--space-xl);
@@ -464,7 +466,7 @@ ul {
     max-width: var(--max-w);
     margin: 0 auto;
     width: 100%;
-}
+} */
 
 .headline_font_typograph {
     font-style: italic;
