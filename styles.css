@@ -405,7 +405,7 @@ ul {
    6. HERO
    ------------------------------------------------------------ */
 .hero {
-    min-height: 60vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -491,11 +491,11 @@ ul {
 }
 
 .hero__subhead {
-    max-width: 560px;
-    margin: 0 auto 1rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
     font-size: 1.05rem;
-    color: var(--charcoal);
-    font-weight: 300;
+    color: var(--gold);
+    font-weight: 400;
     line-height: 1.75;
     opacity: 0.75;
 }
@@ -1039,8 +1039,8 @@ ul {
     font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--ivory);
-    background: var(--forest);
+    color: var(--gold);
+    background: var(--forest-mid);
     padding: 1.1rem 3rem;
     border: 1px solid var(--forest);
     transition: background 0.25s;
