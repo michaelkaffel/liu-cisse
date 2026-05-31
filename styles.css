@@ -22,10 +22,24 @@
     --copper: #a15b35;
     --white: #fbf5ea;
     --teal:#2e6f66;
+    --gold-gradient: linear-gradient(
+        105deg,
+        #7a5c1e 0%,
+        #b8860b 18%,
+        #e8c84a 32%,
+        #fdf0a0 42%,
+        #f5d769 50%,
+        #c8960c 62%,
+        #a87020 75%,
+        #d4a832 88%,
+        #8a6318 100%
+    );
 
     /* Typography */
     --serif: 'Cormorant Garamond', 'Georgia', serif;
     --sans: 'Libre Franklin', -apple-system, 'Helvetica Neue', sans-serif;
+
+    
 
     /* Spacing scale */
     --space-xs: 0.5rem;
@@ -103,6 +117,13 @@ ul {
 
 .text-center {
     text-align: center;
+}
+
+.gold-text {
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .mt-1 {
@@ -518,6 +539,7 @@ ul {
     color: var(--gold);
     margin-bottom: 1rem;
 }
+
 
 .values__item {
     padding: 3rem 2.5rem;
