@@ -613,7 +613,6 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     white-space: nowrap;
-    width: max-content;
     padding: 0 20px;
 }
 
@@ -636,6 +635,30 @@ nav {
 
 .mrow span:last-child::after {
     display: none;
+}
+
+@media(max-width:680px) {
+    .marquee {
+        overflow: hidden;
+    }
+
+    .mrow {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 4px 12px;
+        gap: 0;
+    }
+
+    .mrow span {
+        font-size: 9px;
+        padding: 8px 10px;
+        letter-spacing: .12em;
+    }
+
+  
+    .mrow span:nth-child(n+6) {
+        display: none;
+    }
 }
 
 section {
