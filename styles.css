@@ -128,7 +128,23 @@ p {
     background: var(--gold);
     border: none;
     margin: 24px 0;
+    animation: rulePulse 6s ease-in-out infinite;
 }
+
+@keyframes rulePulse {
+
+    0%,
+    100% {
+        opacity: .3;
+        width: 24px;
+    }
+
+    50% {
+        opacity: 1;
+        width: 64px;
+    }
+}
+
 
 .btn {
     font-family: 'IBM Plex Mono', monospace;
@@ -333,18 +349,48 @@ nav {
     animation: rise .7s ease .05s forwards;
 }
 
+@keyframes scrollPulse {
+    0% {
+        opacity: .3;
+        height: 30%;
+        top: 35%;
+    }
+
+    50% {
+        opacity: 1;
+        height: 100%;
+        top: 0%;
+    }
+
+    100% {
+        opacity: .3;
+        height: 30%;
+        top: 35%;
+    }
+}
+
+
 .func {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 12.5px;
     letter-spacing: .03em;
     color: var(--forest);
-    border-left: 2px solid var(--gold);
-    padding-left: 16px;
+    padding-left: 18px;
     line-height: 1.55;
     margin-bottom: 22px;
     max-width: 46ch;
     opacity: 0;
     animation: rise .7s ease .12s forwards;
+    position: relative;
+}
+
+.func::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1px;
+    background: var(--gold);
+    animation: scrollPulse 6s ease-in-out infinite .8s;
 }
 
 .hero h1 {
@@ -380,9 +426,18 @@ nav {
 .manifesto {
     margin-top: 22px;
     padding-left: 20px;
-    border-left: 2px solid var(--gold);
     opacity: 0;
     animation: rise .8s ease .4s forwards;
+    position: relative;
+}
+
+.manifesto::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1px;
+    background: var(--gold);
+    animation: scrollPulse 6s ease-in-out infinite .8s;
 }
 
 .manifesto .big {
