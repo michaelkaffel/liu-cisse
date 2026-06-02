@@ -332,7 +332,6 @@ nav {
 .hero {
     position: relative;
     padding: 80px 0 70px;
-    overflow: hidden;
 }
 
 .hero-grid {
@@ -341,7 +340,7 @@ nav {
     display: grid;
     grid-template-columns: 1.08fr .92fr;
     gap: 54px;
-    align-items: center;
+    align-items: start;
 }
 
 .ey.he {
@@ -468,7 +467,8 @@ nav {
 
 /* map panel */
 .map-panel {
-    position: relative;
+    position: sticky;
+    top: calc(64px + 2rem);
     border: 1px solid var(--line);
     background: var(--forest);
     overflow: hidden;
