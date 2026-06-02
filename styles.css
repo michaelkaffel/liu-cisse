@@ -145,6 +145,12 @@ p {
     }
 }
 
+@media(max-width:760px) {
+    #primer .wrap {
+        grid-template-columns: 1fr !important;
+    }
+}
+
 
 .btn {
     font-family: 'IBM Plex Mono', monospace;
