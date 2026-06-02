@@ -116,6 +116,8 @@ h2 em {
     line-height: 1.5;
     color: var(--muted);
     max-width: 62ch;
+    border-bottom: 1px solid rgba(213, 181, 101, .4);
+    padding-bottom: 1rem;
 }
 
 p {
@@ -428,6 +430,7 @@ nav {
     opacity: 0;
     animation: rise .8s ease .4s forwards;
     position: relative;
+    max-width: 46ch;
 }
 
 .manifesto::before {
@@ -448,13 +451,25 @@ nav {
 }
 
 .manifesto .small {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10.5px;
-    letter-spacing: .06em;
-    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: .1em;
+    text-transform: none;
     color: var(--muted);
     margin-top: 7px;
 }
+
+.manifest-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    opacity: .7;
+    margin-top: 5px;
+}
+
 
 .hero-actions {
     margin-top: 32px;
@@ -585,12 +600,17 @@ nav {
     overflow: hidden;
     border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
+    width: 100%;        /* add */
+    max-width: 100%;
 }
 
 .mrow {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     white-space: nowrap;
-    animation: scroll 34s linear infinite;
+    width: max-content;
+    padding: 0 20px;
 }
 
 .mrow span {
@@ -610,14 +630,8 @@ nav {
     color: var(--gold-l);
 }
 
-@keyframes scroll {
-    from {
-        transform: translateX(0)
-    }
-
-    to {
-        transform: translateX(-50%)
-    }
+.mrow span:last-child::after {
+    display: none;
 }
 
 section {
@@ -632,7 +646,7 @@ section {
 }
 
 .dark {
-    background: linear-gradient(160deg, var(--forest), var(--forest-d));
+    background: linear-gradient(160deg, #0f3324 0%, var(--forest) 40%, var(--forest-d) 100%);
     color: var(--bone);
     border: none;
 }
@@ -641,7 +655,10 @@ section {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 10% 14%, rgba(177, 132, 47, .10), transparent 32%), radial-gradient(circle at 90% 84%, rgba(46, 111, 102, .12), transparent 34%);
+    background: 
+        radial-gradient(circle at 8% 12%, rgba(177, 132, 47, .18), transparent 38%),
+        radial-gradient(circle at 92% 88%, rgba(46, 111, 102, .22), transparent 38%),
+        radial-gradient(circle at 78% 82%, rgba(177, 132, 47, .10), transparent 32%);
     pointer-events: none;
 }
 
